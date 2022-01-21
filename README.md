@@ -1,5 +1,5 @@
 # change_wallpaper
-For some computers, the admins of the computer will block you from changing the wallpaper. So I created a program to bypass it
+The admins at our school, for some reason, blocked changing the default wallpaper. So I decieded that I wanted to make a program that'll automate the "bypass" process
 
 This program works by modifing the Cached wallpaper in the file directory "C:\Users\*name here*\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles"
 
