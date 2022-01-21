@@ -6,4 +6,7 @@ This program works by modifing the Cached wallpaper in the file directory "C:\Us
 You have to reboot the computer for it to take effect
 
 Steps to running the program
-1) Download the .exe file
+1) Download the .exe file by clicking code then download zip
+2) Once zip file is downloaded, extract it to where ever you want
+3) Double click
+4) Enjoy!
