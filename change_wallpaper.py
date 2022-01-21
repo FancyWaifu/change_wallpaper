@@ -3,8 +3,6 @@ import os
 import pyautogui
 import getpass
 
-user = getpass.getuser()
-
 print("***************************************************************************************************")
 print("*   /$$$$$$                      /$$             /$$   /$$            /$$$$$$  /$$$$$$$   /$$$$$$ *")
 print("*  /$$__  $$                    | $$            |__/  | $$           /$$__  $$| $$__  $$ /$$__  $$*")
@@ -17,13 +15,14 @@ print("*  \______/  \______/  \_______/|__/  \__/      |__/   \___/         \___
 print("***************************************************************************************************")
 print("")
 print("[*] This program will change the wallpaper of your computer since CPS doesn't let you!")
-print(user)
 path = input("[?] Put the file location of the image here(Must be full file location, you can drag and drop): ")
 
 width, height = pyautogui.size()
 size = (width, height)
 
 name = "CachedImage_" + str(width) + "_" + str(height) + "_POS4.jpg"
+
+user = getpass.getuser()
 
 image = Image.open(path)
 image = image.resize(size)
