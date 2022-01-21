@@ -17,9 +17,9 @@ print("")
 print("[*] This program will change the wallpaper of your computer since CPS doesn't let you!")
 path = input("[?] Put the file location of the image here(Must be full file location, you can drag and drop): ")
 
-width, height = pyautogui.size()
+width, height = "1366", "768"
 
-size = (1366, 768)
+size = (1920, 1103)
 
 name = "CachedImage_" + str(width) + "_" + str(height) + "_POS4.jpg"
 
