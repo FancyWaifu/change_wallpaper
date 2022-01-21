@@ -1,6 +1,9 @@
 from PIL import Image
 import os
 import pyautogui
+import getpass
+
+user = getpass.getuser()
 
 print("***************************************************************************************************")
 print("*   /$$$$$$                      /$$             /$$   /$$            /$$$$$$  /$$$$$$$   /$$$$$$ *")
@@ -14,6 +17,7 @@ print("*  \______/  \______/  \_______/|__/  \__/      |__/   \___/         \___
 print("***************************************************************************************************")
 print("")
 print("[*] This program will change the wallpaper of your computer since CPS doesn't let you!")
+print(user)
 path = input("[?] Put the file location of the image here(Must be full file location, you can drag and drop): ")
 
 width, height = pyautogui.size()
@@ -23,8 +27,8 @@ name = "CachedImage_" + str(width) + "_" + str(height) + "_POS4.jpg"
 
 image = Image.open(path)
 image = image.resize(size)
-cached = Image.open("C:\\Users\\rice\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
+cached = Image.open("C:\\Users\\" + user +"\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
 cached.paste(image, (0,0))
 
-os.remove("C:\\Users\\rice\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
-cached = cached.save("C:\\Users\\rice\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
+os.remove("C:\\Users\\" + user +"\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
+cached = cached.save("C:\\Users\\" + user +"\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\CachedFiles\\" + name)
