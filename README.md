@@ -3,7 +3,7 @@ The admins at our school, for some reason, blocked changing the default wallpape
 
 This program works by modifing the Cached wallpaper in the file directory "C:\Users\*name here*\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles"
 
-You have to reboot the computer for it to take effect
+You don't have to reboot but I recommend you do
 
 Steps to running the program
 1) Download the .exe file by clicking code then download zip
